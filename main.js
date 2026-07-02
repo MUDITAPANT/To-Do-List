@@ -17,33 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     noResultsMessage.style.display = "none";
   };
 
-  // const searchTasks = () => {
-  //   const query = searchInput.value.toLowerCase().trim();
-  //   const tasks = taskList.querySelectorAll("li");
-  //   let found = false;
-
-  //   tasks.forEach((li) => {
-  //     const taskText = li.querySelector(".task-text").textContent.toLowerCase();
-  //     const matches = taskText.includes(query);
-
-  //     li.style.display = matches || query === "" ? "flex" : "none";
-
-  //     if (matches) found = true;
-  //   });
-
-  //   noResultsMessage.style.display = found || query === "" ? "none" : "block";
-  // };
-
-  // searchBtn.addEventListener("click", searchTasks);
-  // searchInput.addEventListener("input", () => {
-  //   if (searchInput.value.trim() === "") {
-  //     hideNoResults();
-
-  //     taskList.querySelectorAll("li").forEach((li) => {
-  //       li.style.display = "flex";
-  //     });
-  //   }
-  // });
   const searchTasks = () => {
     const query = searchInput.value.toLowerCase().trim();
     const tasks = taskList.querySelectorAll("li");
