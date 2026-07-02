@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List:Mudita Pant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-webpage">
+        <h1>To-Do List</h1>
+        <div class="stat-container">
+          <div class="details">
+            <h3>Keep it Up!</h3>
+            <div id="progressbar">
+              <div id="progress"></div>
+            </div>
+          </div>
+          <div class="stats-number">
+            <p id="numbers">0 / 0</p>
+          </div>
+        </div>
+        <form class="input-area">
+          <div class="input-group">
+            <input type="text" id="task-input" placeholder="Add new Task" />
+            <select id="priority-input">
+              <option value="Low">Low</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="High">High</option>
+            </select>
+            <input type="datetime-local" id="due-date-input" />
+            <input
+              type="text"
+              id="task-detail-input"
+              placeholder="Add task details"
+            />
+            <button type="submit" id="add-task-btn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search task..." />
+            <button type="button" id="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <!-- <input
+            type="text"
+            id="search-input"
+            placeholder="Search task..."
+            class="task-detail-input"
+          /> -->
+          <p id="no-results">Opps! No matching task found.</p>
+        </form>
+
+        <div class="todos-container">
+          <ul id="task-list"></ul>
+          <img class="empty-image" src="images/img1.gif" alt="empty" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</html>
